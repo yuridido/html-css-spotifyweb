@@ -1,0 +1,213 @@
+/* PARTE GENERICA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-flex {
+    display: flex;
+}
+
+
+header {
+    height: 80px;
+    padding: 5px;
+    background-color: #141b14;
+}
+
+aside {
+    flex: 0 0 200px;
+    color: lightgreen;
+    background-color: black;
+    padding: 20px;
+    overflow-y: hidden;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 80px);
+    background: rgb(144,238,144);
+    background: linear-gradient(333deg, rgba(144,238,144,1) 0%, rgba(50,205,50,1) 100%);
+    color: black;
+}
+
+footer {
+    height: 80px;
+    background-color: mintcream;
+}
+
+.container-navigazione {
+    height: calc(100vh - 80px);
+}
+
+.top-right {
+    width: calc(100vw - 200px);
+    height: 100%;
+    flex-direction: column;
+    background-color: green;
+}
+
+.only-xs {
+    display: none;
+}
+
+.f-right {
+    float: right;
+}
+
+/* ASIDE */
+
+.logo {
+    width: 80%;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.play-create {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+}
+
+.playlist .fas {
+    transform: translateY(20%);
+}
+
+.crea-play {
+    display: inline-block;
+    margin-left: 5px;
+    height: 100%;
+}
+
+.play-create .fas {
+    font-size: 30px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    padding: 10px 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+aside a:hover {
+    color: LimeGreen;
+}
+
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar .fas {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.playlist {
+    margin: 20px 0;
+}
+
+aside h4 {
+    color: white;
+}
+
+.account {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+}
+
+.playlist-list {
+    overflow-y: auto;
+}
+
+.fa-user-circle {
+    font-size: 30px;
+    transform: translateY(20%);
+}
+
+.account .fas {
+    margin-right: 10px
+}
+
+aside hr {
+    width: 100%;
+    color: lightgreen;
+}
+
+/* HEADER */
+
+header button {
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0);
+    color: white;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+.nav-interna a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.nav-interna a:hover {
+    color: LimeGreen;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    aside {
+        flex: 0 0 50px;
+        padding: 20px 5px;
+        text-align: center;
+        }
+
+    .hidden-xs {
+        display: none;
+    }
+
+    .only-xs {
+        display: block;
+    }
+
+    .top-right {
+        width: calc(100vw - 50px);
+    }
+
+    .account {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar .fas,
+    .account .fas {
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+
+
+
+}
