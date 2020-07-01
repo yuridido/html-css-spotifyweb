@@ -13,7 +13,7 @@
 
 header {
     height: 80px;
-    padding: 5px;
+    padding: 5px 10px;
     background-color: #141b14;
 }
 
@@ -32,6 +32,7 @@ main {
     background: rgb(144,238,144);
     background: linear-gradient(333deg, rgba(144,238,144,1) 0%, rgba(50,205,50,1) 100%);
     color: black;
+    padding: 10px;
 }
 
 footer {
@@ -100,6 +101,7 @@ aside li {
 aside a {
     text-decoration: none;
     color: lightgreen;
+    transition: color 0.5s;
 }
 
 aside a:hover {
@@ -158,18 +160,51 @@ header button {
     margin-top: 15px;
     text-transform: uppercase;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+header button:hover {
+    transform: scale(1.1);
 }
 
 /* MAIN */
 
+.nav-interna {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    list-style: none;
+}
+
 .nav-interna a {
     text-decoration: none;
-    color: lightgreen;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 15px;
+    transition: color 0.5s;
 }
 
 .nav-interna a:hover {
-    color: LimeGreen;
+    color: white;
 }
+
+.nav-interna li {
+    margin-bottom: 15px;
+}
+
+.porta-disco {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.porta-disco img {
+    object-fit: content;
+    object-position: center;
+
+}
+
 
 
 
