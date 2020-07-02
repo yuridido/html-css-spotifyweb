@@ -14,7 +14,7 @@
 header {
     height: 80px;
     padding: 5px 10px;
-    background-color: #141b14;
+    background-color: #090909;
 }
 
 aside {
@@ -29,10 +29,10 @@ aside {
 main {
     width: 100%;
     height: calc(100% - 80px);
-    background: rgb(144,238,144);
-    background: linear-gradient(333deg, rgba(144,238,144,1) 0%, rgba(50,205,50,1) 100%);
-    color: black;
-    padding: 10px;
+    background-color: #141922;
+    color: white;
+    padding: 30px;
+    overflow-y: auto;
 }
 
 footer {
@@ -48,7 +48,6 @@ footer {
     width: calc(100vw - 200px);
     height: 100%;
     flex-direction: column;
-    background-color: green;
 }
 
 .only-xs {
@@ -106,6 +105,7 @@ aside a {
 
 aside a:hover {
     color: LimeGreen;
+    cursor: pointer;
 }
 
 .navbar {
@@ -165,6 +165,7 @@ header button {
 
 header button:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -174,11 +175,12 @@ header button:hover {
     justify-content: center;
     text-transform: uppercase;
     list-style: none;
+    margin-bottom: 20px;
 }
 
 .nav-interna a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 15px;
     font-weight: bold;
     padding: 5px 15px;
@@ -186,7 +188,8 @@ header button:hover {
 }
 
 .nav-interna a:hover {
-    color: white;
+    color: lightgreen;
+    cursor: pointer;
 }
 
 .nav-interna li {
@@ -195,16 +198,67 @@ header button:hover {
 
 .porta-disco {
     width: 200px;
-    height: 200px;
+    height: 300px;
+    color: white;
+    text-align: center;
     overflow: hidden;
+    margin: 10px 20px 10px 0;
+}
+
+.dischi {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.disco {
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
 
 .porta-disco img {
-    object-fit: content;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
     object-position: center;
 
 }
 
+h6 {
+    font-size: 18px;
+}
+
+.layover-dischi {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.disco:hover .layover-dischi {
+    opacity: 1;
+    background-color: rgba(43, 43, 43, 0.5);
+    cursor: pointer;
+
+}
+
+.layover-dischi .fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 70px;
+}
+
+
+.cerchio {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 
