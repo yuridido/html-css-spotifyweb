@@ -334,13 +334,15 @@ footer .fa-play-circle {
 }
 
 .centro-top {
+    width: 200px;
     align-items: center;
     justify-content: space-around;
 }
 
 .centro-bot {
     flex-shrink: 1;
-    width: 500px;
+    width: 100%;
+    height: 20px;
 }
 
 footer a {
@@ -355,8 +357,11 @@ footer a:hover {
 }
 
 .centro-bot hr {
-    width: 500px;;
-    height: 3px;
+    color: white;
+    background-color: white;
+    width: 70%;
+    height: 2px;
+    margin: 0 auto;
 }
 
 
