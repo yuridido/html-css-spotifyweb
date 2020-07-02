@@ -37,7 +37,9 @@ main {
 
 footer {
     height: 80px;
-    background-color: mintcream;
+    background-color: #282828;
+    /* padding: 0 10px; */
+    color: white;
 }
 
 .container-navigazione {
@@ -254,12 +256,108 @@ h6 {
     font-size: 70px;
 }
 
+main span {
+    color: gray;
+}
 
 .cerchio {
     border-radius: 50%;
     overflow: hidden;
 }
 
+/* FOOTER */
+
+.player {
+    justify-content: space-between;
+
+}
+
+.pl-sx {
+    width: 200px;
+    height: 80px;
+    padding: 0 5px;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.pl-centro {
+    flex-shrink: 1;
+    flex-basis: 500px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.pl-dx {
+    width: 200px;
+    height: 80px;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    flex-shrink: 0;
+}
+
+.player-disco {
+    width: 40px;
+    height: 40px;
+}
+
+.player-disco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer h6 {
+    font-size: 10px;
+}
+
+footer span {
+    font-size: 8px;
+    color: gray;
+}
+
+footer .fa-play-circle {
+    font-size: 30px;
+}
+
+.mini-slider {
+  -webkit-appearance: none;
+  width: 50px;
+  height: 5px;
+  background: lightgray;
+  outline: none;
+  opacity: 0.7;
+}
+
+.centro-top {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.centro-bot {
+    flex-shrink: 1;
+    width: 500px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.centro-bot hr {
+    width: 500px;;
+    height: 3px;
+}
 
 
 @media screen and (max-width: 767px) {
